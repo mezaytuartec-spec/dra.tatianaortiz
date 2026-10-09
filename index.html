@@ -50,7 +50,8 @@ em{font-style:italic}
 .nav.solid{background:rgba(245,241,234,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom-color:var(--line-soft)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px;max-width:var(--maxw);margin:0 auto;padding:0 20px}
 @media(min-width:720px){.nav-in{height:76px;padding:0 32px}}
-.brand{text-decoration:none;line-height:1}
+.brand{text-decoration:none;line-height:1;display:flex;align-items:center;gap:11px}
+.brand-av{flex:0 0 40px;width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1.5px var(--bg),0 0 0 2.5px var(--line)}
 .brand b{display:block;font-family:"Bodoni Moda",serif;font-size:21px;font-weight:500;letter-spacing:.01em}
 .brand i{display:block;font-style:normal;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-top:5px}
 .nav-links{display:none;gap:30px;list-style:none;margin:0;padding:0}
@@ -247,7 +248,7 @@ body{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
 </head>
 <body>
 <header class="nav" id="nav"><div class="nav-in">
-<a href="#inicio" class="brand"><b>Dra. Tatiana Ortiz</b><i>Equipo Belité</i></a>
+<a href="#inicio" class="brand"><img class="brand-av" src="img/avatar.webp" alt="" width="40" height="40"><span><b>Dra. Tatiana Ortiz</b><i>Equipo Belité</i></span></a>
 <nav aria-label="Principal"><ul class="nav-links" id="navlinks">
 <li><a href="#tratamientos">Tratamientos</a></li><li><a href="#resultados">Resultados</a></li><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#sedes">Dónde atiendo</a></li><li><a href="#preguntas">Preguntas</a></li></ul></nav>
 <a class="nav-cta" href="#sedes">Agendar valoración</a>
@@ -257,7 +258,7 @@ body{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
 <main id="inicio">
 <!-- 1. HERO -->
 <section class="hero"><div class="wrap hero-grid">
-<figure class="hero-photo"><img src="img/tatiana-hero.webp" alt="Dra. Tatiana Ortiz con bata blanca en su consultorio" width="741" height="741" fetchpriority="high"></figure>
+<figure class="hero-photo"><img src="img/tatiana-hero.webp" alt="Dra. Tatiana Ortiz con bata blanca en su consultorio" width="1200" height="1200" fetchpriority="high"></figure>
 <div>
 <p class="hero-name">Dra. Tatiana Ortiz</p>
 <h1>Armonización facial que se nota, <em>sin que se note.</em></h1>
@@ -330,7 +331,7 @@ body{padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
 
 <!-- 4. SOBRE MÍ -->
 <section class="sec" id="sobre-mi"><div class="wrap about">
-<figure class="about-pic"><img src="img/tatiana-retrato.webp" alt="Retrato de la Dra. Tatiana Ortiz" loading="lazy" width="300" height="375"></figure>
+<figure class="about-pic"><img src="img/tatiana-retrato.webp" alt="Retrato de la Dra. Tatiana Ortiz" loading="lazy" width="600" height="750"></figure>
 <div>
 <h2>Hola, soy <em>Tatiana</em>.</h2>
 <div class="about-text">
